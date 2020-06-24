@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산</title>
+</head>
+<body>
+    <script>
+        var x, y, z;
+        x = 10;
+        y = 20;
+        z = '10';
+
+        document.write(x > y, '<br>'); //false
+        document.write(x < y, '<br>'); // true
+        document.write(x >= y, '<br>'); // false
+        document.write(x <= y, '<br>'); // true
+
+        //숫자 10과 문자10이 == 일땐 true가 나옴(type을 보지않음)
+        document.write(`x == z :${x == z} <br>`); 
+        //===은 type까지 고려하기떄문에 문자10과 숫자10은 다르다고 판단함
+        document.write(`x === z :${x === z} <br>`); 
+        //x와 y가 다른가? != 
+        document.write(`x!=y :${x != y} <br>`); 
+        document.write(`${x > y} <br>`); 
+        
+    </script>
+</body>
+</html>

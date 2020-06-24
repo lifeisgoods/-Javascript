@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수 선언문
+        //함수 선언문은 어디서나 불러올 수 있음
+        console.log(sum(10, 20)); //30
+        function sum(x, y){
+            return x + y;
+         }
+         console.log(sum(10, 20)); //30
+       
+        //함수 표현식
+        let sumXY = function(x,y){
+            return x + y;
+        };
+        // let x = 10;
+        let sumXYcopy = sumXY;
+        //함수 표현식은 정의하기전에 사용할 수 없음
+        console.log(sumXY(10, 20));  // 30
+        console.log(sumXYcopy(10, 20));  // 30
+
+
+    </script>
+</body>
+</html>

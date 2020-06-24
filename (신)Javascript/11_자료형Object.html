@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        function sum(x,y){
+            return x + y;
+        }
+            //Object
+    let person = { //key :  value
+        name: '이호준',
+        age:10,
+        height:30,
+        weight:40,
+        이력:{'첫번째직장' : '하나', ' 두번째직장' :'둘'},
+        기능:sum
+    }
+    //속성추가
+    person.house = '대구';
+    //Object 호출
+    console.log(`제 이름은 ${person.name} 입니다.`);
+    console.log(`제 나이는 ${person.age} 입니다. `);
+    console.log(`제 키는은 ${person.height} 입니다.`);
+    console.log(`제 기능은 ${person.기능(20,30)} 입니다.`);
+    
+
+    console.log(`제 이름은 ${person['name']} 입니다.`);
+    console.log(`제 나이는 ${person['age']} 입니다. `);
+    console.log(`제 키는은 ${person['height']} 입니다.`);
+
+    console.log(`저희 집은 ${person['house']} 입니다.`);
+    console.log(`제 이력은 ${person['이력']['첫번째직장']} 입니다.`);
+    console.log(`제 기능은 ${person['기능'](20,10)} 입니다.`);
+    </script>
+</body>
+</html>

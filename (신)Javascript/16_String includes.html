@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String includes</title>
+</head>
+<body>
+    <script>
+        //String
+        let txt = 'ABCDEFGHIJKABC';
+
+        //특정 문자열을 포함하고 있는지 검사 includes
+       console.log(txt.includes('ABC')); //true
+       console.log(txt.includes('Z')); //false
+
+       //이 문자로 시작하고 있는지 검사
+       console.log(txt.startsWith('ABC')); //true
+       console.log(txt.startsWith('DEF')); //false
+       //이 문자로 끝나는지 검사
+       console.log(txt.endsWith('ABC')); //true
+       console.log(txt.endsWith('CDE')); //False
+       //AB가 어디에 있는지
+       console.log(txt.indexOf('AB')); 
+       //두번째도 AB가 있는지
+       console.log(txt.indexOf('AB', 2)); // 11번째에 있다고 나옴
+       
+    </script>
+</body>
+</html>

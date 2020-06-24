@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수들의 연산</title>
+</head>
+<body>
+    <script>
+        //변수
+
+        //문자와 숫자, 기호$와 _만 사용
+        //첫 글자가 숫자가 될 수 없습니다.
+        //대소문자는 구별, 예약어는 사용할 수 없습니다.
+
+        var 변수하나 = 20;
+        var 변수둘 = 10;
+        var 변수셋 = 3;
+
+        document.write('변수 하나: ', 변수하나);
+        document.write('<br>');
+        document.write('변수 둘 : ', 변수둘);
+        document.write('<br>');
+        document.write('변수하나 / 변수둘 : ', 변수하나/변수둘);
+        document.write('<br>');
+        document.write('변수하나 + 변수둘 : ', 변수하나+변수둘);
+        document.write('<br>');
+        document.write('변수하나 - 변수둘 : ', 변수하나-변수둘);
+        document.write('<br>');
+        document.write('변수하나 * 변수둘 : ', 변수하나*변수둘);
+        document.write('<br>');
+        document.write('변수하나 ** 변수둘 : ', 변수하나**변수둘);
+        document.write('<br>');
+        //나머지 연산자
+        document.write('변수하나 % 변수셋 : ', 변수하나%변수셋);
+        document.write('<br>');
+
+        //ES6
+        const 이름 = '전낙원';
+        const 소속 = '집돌이';
+
+        let 주소 = '서울';
+            주소 = '대구';
+
+        //문자열에는 순서가 있다.[]로 찾을 수 있음
+            document.write(이름,'<br>');
+            document.write(소속[1],'<br>');
+            document.write(주소[0],'<br>');
+    </script>
+</body>
+</html>

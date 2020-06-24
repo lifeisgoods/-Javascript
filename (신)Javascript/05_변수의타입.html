@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의타입</title>
+</head>
+<body>
+    <script>
+        document.write(10+10,'<br>'); //20
+        document.write('10'+'10','<br>'); // 1010
+
+        document.write(`typeof(5) : ${typeof(5)} <br>`);
+        document.write(`typeof(5.5) : ${typeof(5.5)} <br>`);
+        document.write(`typeof('5') : ${typeof('5')} <br>`);
+        document.write(`typeof('jennakwon') : ${typeof('jennakwon')} <br>`);
+        document.write(`typeof(x) : ${typeof(x)} <br>`);
+        document.write(`typeof(undefined) : ${typeof(undefined)} <br>`);
+        document.write(`typeof([1,2,3,4,5,]) : ${typeof([1,2,3,4,5,])} <br>`);
+        document.write(`typeof('one':'하나','two':'둘') : ${typeof({'one':'하나','two':'둘'})} <br>`);
+        function js(){
+            return 0;
+        }
+        document.write(`typeof('js') : ${typeof(js)} <br>`);
+        document.write(`typeof('js' / 2) : ${typeof('js' / 2)} <br>`);
+        document.write(`typeof(js / 2) : ${typeof(js / 2)} <br>`);
+        document.write(`typeof('1' + 1) : ${typeof('1'+  1)} <br>`);  
+        document.write(`typeof('jeonnakwon' / 3) : ${typeof('jeonnakwon' / 3)} <br>`);
+        document.write(`typeof('true') : ${typeof(true)} <br>`);
+
+        let test = null; //object라고 나오는데 오류임. js에서 인정한 오류. 수정은 안할예정
+        document.write(typeof(test), '<br>');
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        //String
+        let txt = 'ABCDEFGHIJKABC';
+        let txt_two = 'mom said \'Hello world\'';
+        
+
+        console.log(`txt : ${txt}`);
+        console.log(`txt.length : ${txt.length}`);
+        console.log(`txt[1] : ${txt[1]}`);
+        console.log(`txt_two : ${txt_two}`);
+
+        console.log(`txt.indexOf() : ${txt.indexOf("F")}`);
+        //적힌 문자열을 찾고 젤 앞에있는 문자열을 반환
+        console.log(`txt.search() : ${txt.search("FGH")}`);
+        //마지막에서부터 찾고싶으면 lastIndexOf사용, 못찾으면 -1
+        console.log(`txt.lastIndexOf() : ${txt.lastIndexOf("Z")}`);
+        //3 index 전까지 자름
+        console.log(`txt.slice(0, 3) : ${txt.slice(0,3)}`);
+        console.log(`txt.substring(0,3) : ${txt.substring(0,3)}`);
+        //012번째이후부터 5개 문자열을 출력
+        console.log(`txt.substr(2, 5) : ${txt.substr(2, 5)}`);
+        //문자열 고치는것
+        console.log(`txt.replace('ABC', 'hojun') : ${txt.replace('ABC', 'hojun')}`);
+        //모든 ABC를 바꾸고 싶을때  /ABC/g
+        console.log(`txt.replace(/ABC/g, 'hojun') : ${txt.replace(/ABC/g, 'hojun')}`);
+        //문자 대문자로 변환
+        console.log(`txt.toUpperCase() : ${txt.toUpperCase()}`);
+        //문자 소문자로 변환
+        console.log(`txt.toLowerCase() : ${txt.toLowerCase()}`);
+
+    </script>
+</body>
+</html>

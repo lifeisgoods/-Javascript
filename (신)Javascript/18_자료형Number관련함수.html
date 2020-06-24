@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number관련 함수</title>
+</head>
+<body>
+    <script>
+        //Number 관련 함수
+        let n = 10000000;
+        let nFloat = 10000.123123123;
+        let s = '10,000,000';
+
+        console.log(`n : ${n}`);
+        //,찍어주는 함수 toLocalString()
+        console.log(`n : ${n.toLocaleString()}`);
+       
+        console.log(`s.replace(/,/g,'') : ${s.replace(/,/g,'')}`);
+        console.log(`parseInt(s, 10) : ${parseInt(s, 10)}`);
+        console.log(`n.toFixed(10) : ${n.toFixed(10)}`);
+        console.log(`nFloat.toFixed(3) : ${nFloat.toFixed(3)}`);
+        console.log(`nFloat.toExponential(4) : ${nFloat.toExponential(4)}`);
+        console.log(`nFloat.toFixed(3) : ${nFloat.toFixed(3)}`);
+        
+        
+    </script>
+</body>
+</html>

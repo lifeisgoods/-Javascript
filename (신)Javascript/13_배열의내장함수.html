@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 내장함수</title>
+</head>
+<body>
+    <script>
+        //array의 내장함수
+        let 과일 = ['사과','수박',  '멜론',  '복숭아', '딸기',];
+        let 과일선물 = ['체리', '멜론'];
+        console.log(`과일 : ${과일}`);
+        
+        //array의 마지막 값을 빼는거 pop()
+        console.log(`과일.pop(): ${과일.pop()}`);
+        let 꺼낸과일 = 과일.pop();
+        console.log(`과일:pop() ${꺼낸과일}`);
+        console.log(`과일 : ${과일}`);
+        //array에 값을 추가하는 것 push()
+        console.log(`과일.push() : ${과일.push(꺼낸과일)}`);
+        console.log(`과일 : ${과일}`);
+
+        console.log(`----------------`);
+        let 문자열 = 과일.toString()
+        //배열을 문자열로 바꿔주는 것 toString()
+        console.log(`과일.toString : ${문자열[1]}`);
+        console.log(`과일 : ${과일}`);
+        //배열의 첫번째 값를 가져오는것 shift()
+        console.log(`과일.shift : ${과일.shift()}`); 
+        console.log(`과일 : ${과일}`);
+        // join 은 배열의 항목을 모두 합쳐서 문자열로 만드는 역활을 하는데 배열과 배열 사이에
+        //추가적인 문자열을 삽입할 수 있는 함수 join()
+        console.log(`과일.join('!!') : ${과일.join('!!')}`);
+        console.log(`과일 : ${과일}`);
+        //js배열에는  splice() 라는 메서드가 존재합니다. (어딘가에 삽입하다) //splice(0,0,0)에는 3가지 매개변수가 필요합니다
+        //1번매개변수는 변화할 원소의 첫번쨰 인덱스를 의미합니다. 2번매개변수는 제거할 원소의 개수 
+        //3번 매개변수는 기존에 있던 원소를 삭제하고 새롭게 입력할 값을 의미합니다.
+        console.log(`과일.splice(1, 1, '한라봉') : ${과일.splice(1, 1, '한라봉')}`); 
+        console.log(`과일 : ${과일}`);
+     
+        console.log(`과일 slice(0,1,2): ${과일.slice(0,1,2)}`);
+        console.log(`과일 : ${과일}`);
+        //concat() 배열에 배열 추가 새로운 배열을 만든것이지 기존의 과일이 변하는게 아님
+        console.log(`과일.concat(과일선물) ${과일.concat(과일선물)}`);
+        console.log(`과일 : ${과일}`);
+        
+        //사전식 정렬 
+        console.log(`과일.sort() ${과일.sort()}`);
+        console.log(`과일 : ${과일}`);
+
+        //역정렬
+        console.log(`과일.reverse() ${과일.reverse()}`);
+        console.log(`과일 : ${과일}`);
+
+        console.log(`['1','11','2','22'].sort() ${['1','11','2','22'].sort()}`);
+        console.log(`['1','11','2','22'].length ${['1','11','2','22'].length}`);
+
+    </script>
+</body>
+</html>
